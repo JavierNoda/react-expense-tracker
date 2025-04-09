@@ -12,14 +12,14 @@ function IncomeExpenses() {
     
     
   return (
-    <div>
+    <div className="text-center">
       <div>
-        <h4>Income</h4>
-        <p>${income}</p>
+        <h4 className="">Income</h4>
+        <p className="text-success">${income}</p>
       </div>
       <div>
         <h4>Expense</h4>
-        <p>${expense}</p>
+        <p className="text-danger">${expense}</p>
       </div>
     </div>
   );

@@ -1,49 +1,49 @@
-
-/*
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* Tus estilos personalizados aquí abajo */
-body {
+html, body, #root {
   font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
+  background-color: #1a1a1a !important;
   color: #ffffff;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
-  background-color: #2d2d2d;
-  padding: 2rem;
+  width: 60% !important;
+  background-color: #2d2d2d !important;
+  color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  width: 90%;
-  max-width: 500px;
-  margin: 2rem auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 2rem;
+  margin-top: 2rem;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
-.inc-exp-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  background-color: #333;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
+/* Estilo para la barra de desplazamiento */
+.container::-webkit-scrollbar {
+  width: 8px;
 }
 
-.money {
-  font-size: 1.5rem;
-  font-weight: bold;
+.container::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
 }
 
-.money.plus {
-  color: #4caf50;
+.container::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 4px;
 }
 
-.money.minus {
-  color: #f44336;
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 h1 {
@@ -59,24 +59,15 @@ h2, h3 {
   font-size: 1.5rem;
 }
 
-input {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  background-color: #444;
-  border-radius: 0.25rem;
-  color: #fff;
+.input-form {
+  width: 80%!important;
 }
 
 button {
-  width: 100%;
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  width: 40%;
   transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }

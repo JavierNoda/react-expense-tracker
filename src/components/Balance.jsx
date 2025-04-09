@@ -9,9 +9,9 @@ function Balance() {
   const total = amount.reduce((acc, item) => (acc + item), 0);
 
   return (
-    <div className="balance-container">
-      <h3>Your Balance</h3>
-      <h1>${total}</h1>
+    <div className="balance-container row text-center">
+      <h3 className="">Your Balance</h3>
+      <h1 className="">{total}$</h1>
     </div>
   );
 }
